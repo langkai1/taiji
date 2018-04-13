@@ -1,0 +1,48 @@
+/*
+* @Author: dell
+* @Date:   2018-03-08 19:52:57
+* @Last Modified by:   dell
+* @Last Modified time: 2018-03-16 18:35:15
+*/
+body{
+	background: red;
+}
+.box{
+	width: 200px;
+    height: 400px;
+    background: black;
+    border-radius: 50%;
+    border-right: 200px solid white;
+    margin:0 auto; 
+    position: relative;
+    /* 过度控制动画过程 */
+    transition: 1s ease;
+    /* 贝塞尔曲线 cubic-bezier(0.48, 0.47, 0.47, 0.47)*/
+}
+.box1{
+	width: 80px;
+	height: 80px;
+	border: 60px solid black;
+	background:white ;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	border-radius: 50%;
+}
+.box2{
+	width: 80px;
+	height: 80px;
+	/* 虚线dashed */
+	border: 60px solid white;
+	background:black ;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	border-radius: 50%;
+}
+/* 鼠标移入 */
+.box:hover{
+	/* 旋转 */
+	transform: rotate(3600deg) scale(2, 2);
+	transition:30s linear; 
+}
